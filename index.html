@@ -1,31 +1,41 @@
 <!-- index.html -->
   <!DOCTYPE html>
   <!-- define angular app -->
-  <html ng-app="weddingApp">
+  <html data-ng-app="weddingApp">
   <head>
     <title>Selina and Tu</title>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+
     <!-- SCROLLS -->
     <!-- load bootstrap and fontawesome via CDN -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- SPELLS -->
     <!-- load jquery, bootstrap, and angular via CDN -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-resource.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.min.js">
+   </script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.5.0/angularfire.min.js"></script>
     <script src="script.js"></script>
   </head>
-  <body ng-controller="mainController">
+  <body data-ng-controller="mainController">
 
     <!-- HEADER AND NAVBAR -->
     <header>
       <nav class="navbar navbar-default">
-      <div class="container">
+      <div class="container container-fluid">
         <ul class="nav navbar-nav">
           <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#venue"><i class="fa fa-map-marker"></i> Venue</a></li>
           <li><a href="#story"><i class="fa fa-book"></i> Our Story</a></li>
-          <li><a href="#map"><i class="fa fa-map-marker"></i> Map of Guests Around the World</a></li>
+          <li><a href="#map"><i class="fa fa-globe"></i> Map of Guests</a></li>
           <li><a href="#rsvp"><i class="fa fa-pencil"></i> RSVP</a></li>
           <li><a href="#registry"><i class="fa fa-gift"></i> Registry</a></li>
           <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
@@ -36,10 +46,8 @@
 
     <!-- MAIN CONTENT AND INJECTED VIEWS -->
     <div id="main">
-      {{message}}
-      <!-- angular templating -->
-      <!-- this is where content will be injected -->
-
+      <div data-ng-view>
+      </div>
     </div>
 
     <!-- FOOTER -->

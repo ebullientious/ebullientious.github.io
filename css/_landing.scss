@@ -1,0 +1,25 @@
+$darkSalmon: #B36B5C;
+
+#landing {
+  color: $darkSalmon;
+  #landing-description {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  #field, #landing-gradient {
+    position: absolute;
+    width: 1440px;
+    height: 960px;
+  }
+
+  #landing-gradient {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); 
+  }
+}
