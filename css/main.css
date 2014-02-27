@@ -20,3 +20,6 @@ body {
 
 nav {
   margin-bottom: 0px !important; }
+
+.content {
+  padding: 40px; }

@@ -33,6 +33,10 @@ weddingApp.config(function($routeProvider) {
       templateUrl : 'html/map.html',
       controller : 'mapController'
     })
+    .when('/tags', {
+      templateUrl : 'html/tags.html',
+      controller : 'tagsController'
+    })
     .otherwise({
       templateUrl : 'html/landing.html',
       controller : 'landingController'
@@ -65,6 +69,9 @@ weddingApp.controller('registryController', function($scope) {
 })
 
 weddingApp.controller('rsvpController', function($scope) {
+});
+
+weddingApp.controller('tagsController', function($scope) {
 });
 
 weddingApp.controller('weddingPartyController', function($scope) {

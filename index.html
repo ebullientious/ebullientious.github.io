@@ -24,6 +24,10 @@
     <script src="https://cdn.firebase.com/v0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/0.5.0/angularfire.min.js"></script>
     <script src="script.js"></script>
+
+    <script>
+      var myDataRef = new Firebase('https://cu3bfdjm8tr.firebaseio-demo.com/');
+    </script>
   </head>
   <body data-ng-controller="mainController">
 
@@ -39,6 +43,7 @@
           <li><a href="#story"><i class="fa fa-book"></i> Our Story</a></li>
           <li><a href="#weddingParty"><i class="fa fa-group"></i> Wedding Party</a></li>
           <li><a href="#registry"><i class="fa fa-gift"></i> Registry</a></li>
+          <li><a href="#tags"><i class="fa fa-tags"></i> Tags</a></li>
           <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
         </ul>
       </div>
