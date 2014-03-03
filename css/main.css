@@ -12,14 +12,25 @@
     width: 1440px;
     height: 960px; }
   #landing #landing-gradient {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); }
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 70%, white 98%); }
+
+#tags #instagram-results {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+#tags .instagram-result {
+  padding: 12px; }
 
 body {
-  margin: 0 auto;
-  font-family: "HelveticaNeue-Light"; }
+  margin: 0px auto;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 nav {
   margin-bottom: 0px !important; }
 
 .content {
   padding: 40px; }
+
+#main {
+  width: 1440px;
+  margin: 0px auto; }

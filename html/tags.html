@@ -1,4 +1,4 @@
-<div id="tags" class="content">
+<div id="tags">
   <p>This page is a placeholder for images populated with #selinaTu.</p>
   <p>It will eventually tap into these APIs:</p>
   <ul>
@@ -6,4 +6,12 @@
     <li><i class="fa fa-instagram"></i> Instagram</li>
     <li><i class="fa fa-flickr"></i> Flickr</li>
   </ul>
+  <div>
+    <input type="text" value="pugs" placeholder="Enter Search Value" data-ng-model="searchValue">
+  </div>
+
+  <div id="instagram-results" >
+    <img class="instagram-result" data-ng-repeat="tag in tagItems" data-ng-src="{{tag.images.low_resolution.url}}"/>
+  </div>
+
 </div>

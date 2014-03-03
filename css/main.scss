@@ -1,8 +1,9 @@
 @import '_landing';
+@import '_tags';
 
 body {
-  margin: 0 auto;
-  font-family: "HelveticaNeue-Light";
+  margin: 0px auto;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 nav {
@@ -11,4 +12,9 @@ nav {
 
 .content {
   padding: 40px;
+}
+
+#main {
+  width: 1440px;
+  margin: 0px auto;
 }

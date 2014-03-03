@@ -1,7 +1,7 @@
 // script.js
 
 // create the module and name it scotchApp
-var weddingApp = angular.module('weddingApp', ['ngRoute']);
+var weddingApp = angular.module('weddingApp', ['ngRoute', 'd3']);
 
 weddingApp.config(function($routeProvider) {
   $routeProvider
@@ -71,8 +71,20 @@ weddingApp.controller('registryController', function($scope) {
 weddingApp.controller('rsvpController', function($scope) {
 });
 
-weddingApp.controller('tagsController', function($scope) {
-});
+weddingApp.controller('tagsController', ['$scope', 'instagram', function($scope, instagram) {
+  $scope.tagItems = [];
+  $scope.$watch('searchValue', function () {
+    instagram.fetchRecentTag($scope.searchValue, function (data) {
+      $scope.tagItems = data;
+    });
+  });
+}]);
 
 weddingApp.controller('weddingPartyController', function($scope) {
+  $scope.data = [
+    {name: "Greg", score: 98},
+    {name: "Ari", score: 96},
+    {name: 'Q', score: 75},
+    {name: "Loser", score: 48}
+  ];
 });
