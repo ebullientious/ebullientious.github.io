@@ -21,6 +21,10 @@
 #tags .instagram-result {
   padding: 12px; }
 
+#rsvp input {
+  margin: 10px 0px;
+  width: 300px; }
+
 body {
   margin: 0px auto;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }

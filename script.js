@@ -1,7 +1,7 @@
 // script.js
 
 // create the module and name it scotchApp
-var weddingApp = angular.module('weddingApp', ['ngRoute', 'd3']);
+var weddingApp = angular.module('weddingApp', ['ngRoute', 'd3', 'firebase']);
 
 weddingApp.config(function($routeProvider) {
   $routeProvider
@@ -68,8 +68,13 @@ weddingApp.controller('storyController', function($scope) {
 weddingApp.controller('registryController', function($scope) {
 })
 
-weddingApp.controller('rsvpController', function($scope) {
-});
+weddingApp.controller('rsvpController', ['$scope', 'rsvpService', function($scope, rsvpService) {
+  $scope.user = {};
+  $scope.addRSVP = function () {
+    var user = $scope.user;
+    rsvpService.addRSVP({firstName: user.firstName, lastName: user.lastName, email: user.email});
+  }
+}]);
 
 weddingApp.controller('tagsController', ['$scope', 'instagram', function($scope, instagram) {
   $scope.tagItems = [];

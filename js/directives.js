@@ -34,8 +34,12 @@ weddingApp.directive('packedCircle', ['$window', '$timeout', 'd3Service',
           scope.render = function(data) {
             svg.selectAll('*').remove();
  
-            if (!data) return;
-            if (renderTimeout) clearTimeout(renderTimeout);
+            if (!data) {
+              return;
+            }
+            if (renderTimeout) {
+              clearTimeout(renderTimeout);
+            }
  
             renderTimeout = $timeout(function() {
               var width = d3.select(element[0])[0][0].offsetWidth - margin,
