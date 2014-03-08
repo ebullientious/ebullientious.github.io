@@ -1,0 +1,49 @@
+{
+  "name": "weddingPartyData",
+  "children": [
+  {
+    "name": "Bride's Crew",
+    "children": [
+    {
+      "name": "Parents",
+      "children": [
+        { "name": "Ratana Chang", "role": "Mother of the Bride", "size": 1000},
+        { "name": "Samuel Chang", "role": "Father of the Bride", "size": 1000}
+      ]
+    },
+    {
+      "name": "Bridal Brigade",
+      "children": [
+        { "name": "Lauren Tsung", "role": "Bridesmaid",     "size": 500},
+        { "name": "Laura Fong",   "role": "Bridesmaid",     "size": 500},
+        { "name": "Camilla Teng", "role": "Maid of Honor",  "size": 500}
+      ]
+    }
+    ]
+  },
+  {
+    "name": "Groom's Crew",
+    "children": [
+    {
+      "name": "Parents",
+      "children": [
+        { "name": "Bachlien Phan",  "role": "Mother of the Groom", "size": 1000},
+        { "name": "Hien Nguyen",    "role": "Father of the Groom", "size": 1000}
+      ]
+    },
+    {
+      "name": "Groom's Squad",
+      "children": [
+        { "name": "Shawn Chang",    "role": "Groomsman",  "size": 500},
+        { "name": "Anhhuy Nguyen",  "role": "Best Man",   "size": 500}
+      ]      
+    }]
+  },
+  {
+    "name": "Nuptial Cabinet",
+    "children": [
+      { "name": "Landon Nguyen", "role": "Ring Bearer", "size": 500}
+    ]
+  }
+  ]
+}

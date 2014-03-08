@@ -1,4 +1,4 @@
-
+// http://www.ng-newsletter.com/posts/d3-on-angular.html
 weddingApp.directive('packedCircle', ['$window', '$timeout', 'd3Service', 
   function($window, $timeout, d3Service) {
     return {
@@ -10,85 +10,41 @@ weddingApp.directive('packedCircle', ['$window', '$timeout', 'd3Service',
       },
       link: function (scope, element, attrs) {
         d3Service.d3().then(function(d3) {
-          var renderTimeout;
-          var margin = parseInt(attrs.margin) || 20,
-          barHeight = parseInt(attrs.barHeight) || 20,
-          barPadding = parseInt(attrs.barPadding) || 5;
+   var diameter = 960,
+    format = d3.format(",d");
 
-          var svg = d3.select(element[0])
-            .append("svg")
-            .style('width', '100%');
+var pack = d3.layout.pack()
+    .size([diameter - 4, diameter - 4])
+    .value(function(d) { return d.size; });
 
-          // Browser onresize event
-          window.onresize = function() {
-            scope.$apply();
-          };
+var svg = d3.select("body").append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+  .append("g")
+    .attr("transform", "translate(2,2)");
 
-          // Watch for resize event
-          scope.$watch(function() {
-            return angular.element($window)[0].innerWidth;
-          }, function() {
-            scope.render(scope.data);
-          });
+d3.json("js/weddingPartyData.json", function(error, root) {
+  var node = svg.datum(root).selectAll(".node")
+      .data(pack.nodes)
+    .enter().append("g")
+      .attr("class", function(d) { return d.children ? "node" : "leaf node"; })
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
-          scope.render = function(data) {
-            svg.selectAll('*').remove();
- 
-            if (!data) {
-              return;
-            }
-            if (renderTimeout) {
-              clearTimeout(renderTimeout);
-            }
- 
-            renderTimeout = $timeout(function() {
-              var width = d3.select(element[0])[0][0].offsetWidth - margin,
-                  height = scope.data.length * (barHeight + barPadding),
-                  color = d3.scale.category20(),
-                  xScale = d3.scale.linear()
-                    .domain([0, d3.max(data, function(d) {
-                      return d.score;
-                    })])
-                    .range([0, width]);
- 
-              svg.attr('height', height);
- 
-              svg.selectAll('rect')
-                .data(data)
-                .enter()
-                  .append('rect')
-                  .on('click', function(d,i) {
-                    return scope.onClick({item: d});
-                  })
-                  .attr('height', barHeight)
-                  .attr('width', 140)
-                  .attr('x', Math.round(margin/2))
-                  .attr('y', function(d,i) {
-                    return i * (barHeight + barPadding);
-                  })
-                  .attr('fill', function(d) {
-                    return color(d.score);
-                  })
-                  .transition()
-                    .duration(1000)
-                    .attr('width', function(d) {
-                      return xScale(d.score);
-                    });
-              svg.selectAll('text')
-                .data(data)
-                .enter()
-                  .append('text')
-                  .attr('fill', '#fff')
-                  .attr('y', function(d,i) {
-                    return i * (barHeight + barPadding) + 15;
-                  })
-                  .attr('x', 15)
-                  .text(function(d) {
-                    return d.name + " (scored: " + d.score + ")";
-                  });
-            }, 200);
-          };
-        })
+  node.append("title")
+      .text(function(d) { return d.name + (d.children ? "" : ": " + format(d.size)); });
+
+  node.append("circle")
+      .attr("r", function(d) { return d.r; });
+
+  node.filter(function(d) { return !d.children; }).append("text")
+      .attr("dy", ".3em")
+      .style("text-anchor", "middle")
+      .text(function(d) { return d.name.substring(0, d.r / 3); });
+});
+
+d3.select(self.frameElement).style("height", diameter + "px");
+    
+        });
       }
     };
   }]);

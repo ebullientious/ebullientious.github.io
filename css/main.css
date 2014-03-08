@@ -11,8 +11,14 @@
     position: absolute;
     width: 1440px;
     height: 960px; }
+  #landing #field {
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in; }
   #landing #landing-gradient {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 70%, white 98%); }
+
+#landing.isLoaded #field {
+  opacity: 1; }
 
 #tags #instagram-results {
   display: flex;
@@ -24,6 +30,19 @@
 #rsvp input {
   margin: 10px 0px;
   width: 300px; }
+
+circle {
+  fill: #1f77b4;
+  fill-opacity: .25;
+  stroke: #1f77b4;
+  stroke-width: 1px; }
+
+.leaf circle {
+  fill: #ff7f0e;
+  fill-opacity: 1; }
+
+text {
+  font: 10px sans-serif; }
 
 body {
   margin: 0px auto;

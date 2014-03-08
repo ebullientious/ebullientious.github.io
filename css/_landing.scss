@@ -19,7 +19,18 @@ $darkSalmon: #B36B5C;
     height: 960px;
   }
 
+  #field {
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in;
+  }
+
   #landing-gradient {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 70%, white 98%);
+  }
+}
+
+#landing.isLoaded {
+  #field {
+    opacity: 1;
   }
 }
