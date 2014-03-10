@@ -1,15 +1,37 @@
-circle {
-  fill: rgb(31, 119, 180);
-  fill-opacity: .25;
-  stroke: rgb(31, 119, 180);
-  stroke-width: 1px;
+#weddingParty {
+  text-align: center;
+  
+  circle {
+    fill: rgb(31, 119, 180);
+    fill-opacity: .25;
+    stroke: rgb(31, 119, 180);
+    stroke-width: 1px;
+  }
+
+  .leaf circle {
+    fill: #CCC1A3;
+    fill-opacity: 1;
+  }
+
+  .mask-headshot {
+    clip-path: url("#mask-headshot");
+  }
+
+  // Using themes in https://kuler.adobe.com/Vintage-American-color-theme-3502064/
+  circle.bridal-party {
+    fill: #FF857F;
+  }
+
+  circle.groom-party {
+    fill: #398899;
+  }
+
+  circle.bride-parents {
+    fill: #FFFCE8;
+  }
+
+  circle.groom-parents {
+    fill: #CC3B37;
+  }
 }
 
-.leaf circle {
-  fill: #ff7f0e;
-  fill-opacity: 1;
-}
-
-text {
-  font: 10px sans-serif;
-}

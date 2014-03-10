@@ -1,11 +1,13 @@
 {
-  "name": "weddingPartyData",
+  "name": "Wedding Party",
   "children": [
   {
     "name": "Bride's Crew",
+    "className": "bridal-party",
     "children": [
     {
       "name": "Parents",
+      "className": "bride-parents",
       "children": [
         { "name": "Ratana Chang", "role": "Mother of the Bride", "size": 1000},
         { "name": "Samuel Chang", "role": "Father of the Bride", "size": 1000}
@@ -14,8 +16,8 @@
     {
       "name": "Bridal Brigade",
       "children": [
-        { "name": "Lauren Tsung", "role": "Bridesmaid",     "size": 500},
-        { "name": "Laura Fong",   "role": "Bridesmaid",     "size": 500},
+        { "name": "Lauren Tsung", "role": "Bridesmaid",     "size": 500, "image": "images/lauren-headshot.jpg"},
+        { "name": "Laura Fong",   "role": "Bridesmaid",     "size": 500, "image": "images/laura-headshot.jpg"},
         { "name": "Camilla Teng", "role": "Maid of Honor",  "size": 500}
       ]
     }
@@ -23,9 +25,11 @@
   },
   {
     "name": "Groom's Crew",
+    "className": "groom-party",
     "children": [
     {
       "name": "Parents",
+      "className": "groom-parents",
       "children": [
         { "name": "Bachlien Phan",  "role": "Mother of the Groom", "size": 1000},
         { "name": "Hien Nguyen",    "role": "Father of the Groom", "size": 1000}
@@ -42,7 +46,8 @@
   {
     "name": "Nuptial Cabinet",
     "children": [
-      { "name": "Landon Nguyen", "role": "Ring Bearer", "size": 500}
+      { "name": "Landon Nguyen",  "role": "Ring Bearer",  "size": 500},
+      { "name": "Tu's cousin",    "role": "Flower Girl",  "size": 500}
     ]
   }
   ]

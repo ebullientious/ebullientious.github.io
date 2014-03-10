@@ -31,18 +31,26 @@
   margin: 10px 0px;
   width: 300px; }
 
-circle {
-  fill: #1f77b4;
-  fill-opacity: .25;
-  stroke: #1f77b4;
-  stroke-width: 1px; }
-
-.leaf circle {
-  fill: #ff7f0e;
-  fill-opacity: 1; }
-
-text {
-  font: 10px sans-serif; }
+#weddingParty {
+  text-align: center; }
+  #weddingParty circle {
+    fill: #1f77b4;
+    fill-opacity: .25;
+    stroke: #1f77b4;
+    stroke-width: 1px; }
+  #weddingParty .leaf circle {
+    fill: #CCC1A3;
+    fill-opacity: 1; }
+  #weddingParty .mask-headshot {
+    clip-path: url("#mask-headshot"); }
+  #weddingParty circle.bridal-party {
+    fill: #FF857F; }
+  #weddingParty circle.groom-party {
+    fill: #398899; }
+  #weddingParty circle.bride-parents {
+    fill: #FFFCE8; }
+  #weddingParty circle.groom-parents {
+    fill: #CC3B37; }
 
 body {
   margin: 0px auto;

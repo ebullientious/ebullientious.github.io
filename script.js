@@ -3,7 +3,7 @@
 // create the module and name it scotchApp
 var weddingApp = angular.module('weddingApp', ['ngRoute', 'd3', 'firebase']);
 
-weddingApp.config(function($routeProvider) {
+weddingApp.config(function($routeProvider, $locationProvider) {
   $routeProvider
     .when('/contact', {
       templateUrl : 'html/contact.html',
@@ -37,11 +37,17 @@ weddingApp.config(function($routeProvider) {
       templateUrl : 'html/tags.html',
       controller : 'tagsController'
     })
+    .when('/', {
+      templateUrl : 'html/landing.html',
+      controller : 'landingController'    
+    })
     .otherwise({
       templateUrl : 'html/landing.html',
       controller : 'landingController'
-    })
+    });
     // .otherwise({
     //   redirectTo : '/'
     // });
+  // TODO: Resolve localhost issue to enable the pretty urls 
+  // $locationProvider.html5Mode(true);
 });
