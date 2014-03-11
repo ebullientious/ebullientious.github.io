@@ -18,7 +18,7 @@
       "children": [
         { "name": "Lauren Tsung", "role": "Bridesmaid",     "size": 500, "image": "images/lauren-headshot.jpg"},
         { "name": "Laura Fong",   "role": "Bridesmaid",     "size": 500, "image": "images/laura-headshot.jpg"},
-        { "name": "Camilla Teng", "role": "Maid of Honor",  "size": 500}
+        { "name": "Camilla Teng", "role": "Maid of Honor",  "size": 500, "image": "images/camilla-headshot.jpg"}
       ]
     }
     ]
@@ -31,8 +31,8 @@
       "name": "Parents",
       "className": "groom-parents",
       "children": [
-        { "name": "Bachlien Phan",  "role": "Mother of the Groom", "size": 1000},
-        { "name": "Hien Nguyen",    "role": "Father of the Groom", "size": 1000}
+        { "name": "Bachlien Phan",  "role": "Mother of the Groom", "size": 1000, "image": "images/lien-headshot.jpg"},
+        { "name": "Hien Nguyen",    "role": "Father of the Groom", "size": 1000, "image": "images/hien-headshot.jpg"}
       ]
     },
     {

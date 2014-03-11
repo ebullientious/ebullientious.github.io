@@ -35,7 +35,7 @@
     <script>
       var myDataRef = new Firebase('https://cu3bfdjm8tr.firebaseio-demo.com/');
     </script>
-    <!-- <base href="/"> -->
+    <base href="/">
   </head>
   <body data-ng-controller="mainController">
 
@@ -43,16 +43,16 @@
     <header>
       <nav class="navbar navbar-default">
       <div class="container container-fluid">
-        <ul class="nav navbar-nav">
-          <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-          <li><a href="#venue"><i class="fa fa-map-marker"></i> Venue</a></li>
-          <li><a href="#rsvp"><i class="fa fa-pencil"></i> RSVP</a></li>
-          <li><a href="#map"><i class="fa fa-globe"></i> Map of Guests</a></li>
-          <li><a href="#story"><i class="fa fa-book"></i> Our Story</a></li>
-          <li><a href="#weddingParty"><i class="fa fa-group"></i> Wedding Party</a></li>
-          <li><a href="#registry"><i class="fa fa-gift"></i> Registry</a></li>
-          <li><a href="#tags"><i class="fa fa-tags"></i> Tags</a></li>
-          <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+        <ul class="nav navbar-nav" data-ng-controller="navController">
+          <li data-ng-class="{ active: isActive('/')}"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+          <li data-ng-class="{ active: isActive('/venue')}"><a href="#venue"><i class="fa fa-map-marker"></i> Venue</a></li>
+          <li data-ng-class="{ active: isActive('/rsvp')}"><a href="#rsvp"><i class="fa fa-pencil"></i> RSVP</a></li>
+          <li data-ng-class="{ active: isActive('/map')}"><a href="#map"><i class="fa fa-globe"></i> Map of Guests</a></li>
+          <li data-ng-class="{ active: isActive('/story')}"><a href="#story"><i class="fa fa-book"></i> Our Story</a></li>
+          <li data-ng-class="{ active: isActive('/weddingParty')}"><a href="#weddingParty"><i class="fa fa-group"></i> Wedding Party</a></li>
+          <li data-ng-class="{ active: isActive('/registry')}"><a href="#registry"><i class="fa fa-gift"></i> Registry</a></li>
+          <li data-ng-class="{ active: isActive('/tags')}"><a href="#tags"><i class="fa fa-tags"></i> Tags</a></li>
+          <li data-ng-class="{ active: isActive('/contact')}"><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
         </ul>
       </div>
       </nav>

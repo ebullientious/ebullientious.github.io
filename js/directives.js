@@ -9,7 +9,6 @@ weddingApp.directive('packedCircle', ['$window', '$timeout', 'd3Service',
         onClick: '&'
       },
       link: function (scope, element, attrs) {
-        console.log(element)
         d3Service.d3().then(function(d3) {
         var diameter = 700;
         var pack = d3.layout.pack()

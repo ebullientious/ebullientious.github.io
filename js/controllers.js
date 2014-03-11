@@ -3,6 +3,12 @@
 weddingApp.controller('mainController', function($scope) {
 });
 
+weddingApp.controller('navController', function ($scope, $location) {
+  $scope.isActive = function (viewLocation) {
+    return viewLocation === $location.path();
+  }
+});
+
 weddingApp.controller('contactController', function($scope) {
 })
 

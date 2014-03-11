@@ -49,5 +49,5 @@ weddingApp.config(function($routeProvider, $locationProvider) {
     //   redirectTo : '/'
     // });
   // TODO: Resolve localhost issue to enable the pretty urls 
-  // $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(true);
 });
