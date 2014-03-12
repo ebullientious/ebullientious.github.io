@@ -9,7 +9,7 @@ weddingApp.directive('packedCircle', ['$window', '$timeout', 'd3Service',
         onClick: '&'
       },
       link: function (scope, element, attrs) {
-        d3Service.d3().then(function(d3) {
+        d3Service.d3().then(function(d3) { // Start d3Service function
         var diameter = 700;
         var pack = d3.layout.pack()
           .size([diameter - 4, diameter - 4])
@@ -18,10 +18,10 @@ weddingApp.directive('packedCircle', ['$window', '$timeout', 'd3Service',
         var svg = d3.select(element[0]).append("svg")
             .attr("width", diameter)
             .attr("height", diameter)
-          .append("g")
-            .attr("transform", "translate(0,0)");
+            .append("g")
+              .attr("transform", "translate(0,0)");
 
-        d3.json("js/weddingPartyData.json", function(error, root) {
+        d3.json("js/weddingPartyData.json", function(error, root) { // Start creating nodes
           var node = svg.datum(root).selectAll(".node") // Bind data to all nodes
               .data(pack.nodes)
               .enter()
@@ -45,17 +45,9 @@ weddingApp.directive('packedCircle', ['$window', '$timeout', 'd3Service',
               .attr("transform", function(d) { return "translate(-" + d.r + ",-" + d.r + ")"; })
               .style("preserveAspectRatio", "xMidyMid slice")
               .attr("class", "mask-headshot");
-
-  // node.filter(function(d) { return !d.children; })
-  //   .append("text")
-  //     .attr("dy", ".3em")
-  //     .style("text-anchor", "middle")
-  //     .text(function(d) { return d.name.substring(0, d.r / 3); });
-});
-
-d3.select(self.frameElement).style("height", diameter + "px");
-    
+          }); // End creating nodes
+        
         });
-      }
+      } // End d3Service function
     };
-  }]);
+}]);

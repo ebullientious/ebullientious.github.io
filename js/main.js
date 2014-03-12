@@ -1,6 +1,3 @@
-// script.js
-
-// create the module and name it scotchApp
 var weddingApp = angular.module('weddingApp', ['ngRoute', 'd3', 'firebase']);
 
 weddingApp.config(function($routeProvider, $locationProvider) {
