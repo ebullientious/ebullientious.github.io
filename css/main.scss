@@ -1,7 +1,13 @@
 @import '_landing';
-@import '_tags';
 @import '_rsvp';
+@import '_story';
+@import '_tags';
 @import '_weddingParty';
+
+@font-face {
+  font-family: "Espacio";
+  src: url("../assets/fonts/Espacio.ttf") format("truetype");
+}
 
 body {
   margin: 0px auto;
@@ -13,10 +19,20 @@ nav {
 }
 
 .content {
+  width: 1200px;
   padding: 40px;
+  margin: 0px auto;
 }
 
 #main {
-  width: 1200px;
   margin: 0px auto;
+}
+
+.vertical-center {
+  display: box;
+  box-pack: center;
+  box-orient: vertical;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
 }

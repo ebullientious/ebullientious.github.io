@@ -1,0 +1,35 @@
+#story .story-container {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: start;
+  justify-content: space-between; }
+#story .story-description {
+  font-family: "Espacio", Verdana, Geneva, sans-serif;
+  font-size: 50px; }
+#story time {
+  padding: 40px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  box-pack: start; }
+#story #story-one {
+  background-color: black;
+  color: white;
+  height: 200px; }
+  #story #story-one img {
+    max-height: 200px; }
+#story #story-two {
+  background-color: #CFCFCF;
+  height: 400px;
+  justify-content: flex-start; }
+  #story #story-two .fa-clock-o {
+    font-size: 400px;
+    color: #E5D5CF; }
+  #story #story-two .story-description {
+    position: relative;
+    z-index: 2;
+    padding-left: 80px; }

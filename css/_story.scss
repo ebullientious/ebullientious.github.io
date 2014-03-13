@@ -1,0 +1,52 @@
+#story {
+
+  .story-container {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: start;
+    justify-content: space-between;
+  }
+
+  .story-description {
+    font-family: "Espacio", Verdana, Geneva, sans-serif;
+    font-size: 50px;
+    @extend .vertical-center;
+  }
+
+  time {
+    padding: 40px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: start;
+    box-pack: start;
+  }
+
+  #story-one {
+    background-color: black;
+    color: white;
+    height: 200px;
+    img {
+      max-height: 200px;
+    }
+  }
+
+  #story-two {
+    background-color: #CFCFCF;
+    height: 400px;
+    justify-content: flex-start;
+    .fa-clock-o {
+      font-size: 400px;
+      color: #E5D5CF;
+    }
+    .story-description {
+      position: relative;
+      z-index: 2;
+      padding-left: 80px;
+    }
+  }
+
+}
