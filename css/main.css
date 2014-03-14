@@ -26,10 +26,12 @@
 
 #story .story-container {
   display: flex;
+  justify-content: space-between;
   display: -webkit-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: start;
-  justify-content: space-between; }
+  -webkit-justify-content: space-between;
+  overflow: hidden; }
 #story .story-description {
   font-family: "Espacio", Verdana, Geneva, sans-serif;
   font-size: 50px; }
@@ -50,15 +52,45 @@
     max-height: 200px; }
 #story #story-two {
   background-color: #CFCFCF;
-  height: 400px;
+  height: 200px;
   justify-content: flex-start; }
   #story #story-two .fa-clock-o {
+    position: relative;
+    top: -100px;
     font-size: 400px;
     color: #E5D5CF; }
   #story #story-two .story-description {
     position: relative;
     z-index: 2;
-    padding-left: 80px; }
+    margin-left: -343px; }
+    #story #story-two .story-description .line-two {
+      margin-left: 303px; }
+#story #story-three {
+  height: 240px; }
+  #story #story-three .powells {
+    position: relative;
+    top: -80px;
+    height: 400px; }
+#story #story-four {
+  height: 200px;
+  background-color: #CFCFCF; }
+  #story #story-four .fa-cloud {
+    position: relative;
+    top: -300px;
+    left: -100px;
+    color: lightcyan;
+    font-size: 800px; }
+  #story #story-four .fa-cloud.flip {
+    top: 50px;
+    font-size: 300px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); }
+  #story #story-four .fa-sun-o {
+    font-size: 200px;
+    color: lightyellow; }
+  #story #story-four .story-description {
+    position: relative;
+    left: -400px; }
 
 #tags #instagram-results {
   display: flex;
