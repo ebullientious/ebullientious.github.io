@@ -1,0 +1,37 @@
+$darkSalmon: #B36B5C;
+$universalPadding: 40px;
+
+#landing {
+  color: $darkSalmon;
+  #landing-description {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  #field, #landing-gradient {
+    position: absolute;
+    width: 1440px;
+    height: 960px;
+  }
+
+  #field {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in;
+  }
+
+  #landing-gradient {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 70%, white 98%);
+  }
+}
+
+// #landing.isLoaded {
+//   #field {
+//     opacity: 1;
+//   }
+// }

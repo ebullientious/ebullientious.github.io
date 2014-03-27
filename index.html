@@ -1,69 +1,12 @@
 <!-- index.html -->
   <!DOCTYPE html>
   <!-- define angular app -->
-  <html data-ng-app="weddingApp">
+  <html>
   <head>
-    <title>Selina and Tu</title>
+    <title>A work in progress</title>
     <link rel="icon" type="image/ico" href="favicon.ico"/>
-
-    <!-- SCROLLS -->
-    <!-- load bootstrap and fontawesome via CDN -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-
-    <!-- SPELLS -->
-    <!-- load jquery, bootstrap, and angular via CDN -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-resource.min.js">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.min.js">
-   </script>
-
-    <!-- Firebase -->
-    <script src="https://cdn.firebase.com/js/client/1.0.6/firebase.js"></script>
-    <!-- AngularFire Plugin -->
-    <script src="https://cdn.firebase.com/libs/angularfire/0.7.0/angularfire.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script> -->
-    <script src="dist/ebullientious.github.io.js"></script>
-
-    <script>
-      var myDataRef = new Firebase('https://cu3bfdjm8tr.firebaseio-demo.com/');
-    </script>
-    <!-- <base href="/"> -->
   </head>
-  <body data-ng-controller="mainController">
-
-    <!-- HEADER AND NAVBAR -->
-    <header>
-      <nav class="navbar navbar-default">
-      <div class="container container-fluid">
-        <ul class="nav navbar-nav" data-ng-controller="navController">
-          <li data-ng-class="{ active: isActive('/')}"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-          <li data-ng-class="{ active: isActive('/venue')}"><a href="#venue"><i class="fa fa-map-marker"></i> Venue</a></li>
-          <li data-ng-class="{ active: isActive('/rsvp')}"><a href="#rsvp"><i class="fa fa-pencil"></i> RSVP</a></li>
-          <li data-ng-class="{ active: isActive('/map')}"><a href="#map"><i class="fa fa-globe"></i> Map of Guests</a></li>
-          <li data-ng-class="{ active: isActive('/story')}"><a href="#story"><i class="fa fa-book"></i> Our Story</a></li>
-          <li data-ng-class="{ active: isActive('/weddingParty')}"><a href="#weddingParty"><i class="fa fa-group"></i> Wedding Party</a></li>
-          <li data-ng-class="{ active: isActive('/registry')}"><a href="#registry"><i class="fa fa-gift"></i> Registry</a></li>
-          <li data-ng-class="{ active: isActive('/tags')}"><a href="#tags"><i class="fa fa-tags"></i> Tags</a></li>
-          <li data-ng-class="{ active: isActive('/contact')}"><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
-        </ul>
-      </div>
-      </nav>
-    </header>
-
-    <!-- MAIN CONTENT AND INJECTED VIEWS -->
-    <div id="main">
-      <div data-ng-view>
-      </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-    </footer>
-
+  <body>
+    selinachang@gmail.com
   </body>
   </html>

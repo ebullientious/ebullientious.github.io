@@ -1,0 +1,9 @@
+#tags #instagram-results {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: center; }
+#tags .instagram-result {
+  padding: 12px; }
