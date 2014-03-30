@@ -1,20 +1,33 @@
 #weddingParty {
   text-align: center; }
-  #weddingParty circle {
-    fill: #1f77b4;
-    fill-opacity: .25;
-    stroke: #1f77b4;
-    stroke-width: 1px; }
-  #weddingParty .leaf circle {
-    fill: #CCC1A3;
-    fill-opacity: 1; }
-  #weddingParty .mask-headshot {
-    clip-path: url("#mask-headshot"); }
-  #weddingParty circle.bridal-party {
-    fill: #FF857F; }
-  #weddingParty circle.groom-party {
-    fill: #398899; }
-  #weddingParty circle.bride-parents {
-    fill: #FFFCE8; }
-  #weddingParty circle.groom-parents {
-    fill: #CC3B37; }
+  #weddingParty h1 {
+    margin-top: 0px; }
+  #weddingParty #weddingParty-menu {
+    color: white;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center; }
+  #weddingParty .weddingParty-member {
+    border: 1px solid gray;
+    background: black;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    margin: 0px 4px; }
+  #weddingParty .weddingParty-member.active.bridesmaid {
+    background: pink; }
+  #weddingParty .weddingParty-member.active.groomsman {
+    background: lightblue; }
+  #weddingParty .weddingParty-member figcaption {
+    display: -webkit-box;
+    padding: 4px 0px; }
+  #weddingParty .weddingParty-member-img {
+    width: 100px;
+    height: 150px;
+    overflow: hidden; }
+  #weddingParty .weddingParty-member img {
+    display: -webkit-box;
+    -webkit-filter: grayscale(1) sepia(0.3);
+    width: 100px; }
+  #weddingParty .weddingParty-member.active img {
+    -webkit-filter: none; }

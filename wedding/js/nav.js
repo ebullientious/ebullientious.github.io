@@ -1,5 +1,3 @@
-
-
 var Navigation = can.Control.extend({
   init: function (element, options) {
     // activate the first tab
@@ -7,7 +5,6 @@ var Navigation = can.Control.extend({
     this.previousItem.addClass( 'active' );
   },
   'li click': function( li, event ) {
-    console.log(event)
     event.preventDefault();  
     if (li.hasClass("active")) {
       return;
@@ -23,16 +20,21 @@ var Navigation = can.Control.extend({
     return $(element.find('a' ).attr('href' ).substring(1));
   },
   '{can.route} change': function(ev, attr, how, newVal, oldVal) {
-    if (oldVal == "") {
+    var data = {};    console.log(oldVal);
+
+    if (oldVal === "") {
       oldVal = "landing";
     }
-    $("#main-content").html(can.view("html/" + oldVal + ".html", {}))
+    else if (oldVal === "weddingParty") {
+      $("#main-content").html(can.view("html/" + oldVal + ".ejs", data));
+      return;
+    }
+    $("#main-content").html(can.view("html/" + oldVal + ".html", data));
   }
 });
 
-$( document ).ready(function() {
+$(document).ready(function() {
   var nav = new Navigation("#navigation", {attr: "page"});
-  can.route(":something");
   can.route.ready();
 });
 
