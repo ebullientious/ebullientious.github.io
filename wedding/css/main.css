@@ -17,8 +17,12 @@
   #landing #landing-gradient {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 70%, white 98%); }
 
-#rsvp input {
-  margin: 10px 0px;
+#rsvp form {
+  padding-top: 20px;
+  padding-left: 50px; }
+#rsvp input[type=text],
+#rsvp input[type=email],
+#rsvp textarea {
   width: 300px; }
 
 #story .story-container {
