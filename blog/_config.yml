@@ -1,3 +1,4 @@
 name: Selina's Development Blog
-markdown: kramdown 
+markdown: redcarpet 
 pygments: true
+timezone: US/Pacific
