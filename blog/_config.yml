@@ -2,3 +2,5 @@ name: Selina's Development Blog
 markdown: redcarpet 
 pygments: true
 timezone: US/Pacific
+url: "http://ebullientious.github.io"
+baseurl: /blog

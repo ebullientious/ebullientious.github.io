@@ -18,15 +18,17 @@
   display: flex;
   -webkit-box-pack: start;
   box-pack: start; }
+#story section {
+  height: 1000px; }
 #story #story-one {
   background-color: black;
   color: white;
-  height: 200px; }
+  height: 1000px;
+  overflow: hidden; }
   #story #story-one img {
-    max-height: 200px; }
+    max-height: 1000px; }
 #story #story-two {
   background-color: #CFCFCF;
-  height: 200px;
   justify-content: flex-start; }
   #story #story-two .fa-clock-o {
     position: relative;
@@ -39,14 +41,11 @@
     margin-left: -343px; }
     #story #story-two .story-description .line-two {
       margin-left: 303px; }
-#story #story-three {
-  height: 240px; }
-  #story #story-three .powells {
-    position: relative;
-    top: -80px;
-    height: 400px; }
+#story #story-three .powells {
+  position: relative;
+  top: -80px;
+  height: 400px; }
 #story #story-four {
-  height: 200px;
   background-color: #CFCFCF; }
   #story #story-four .fa-cloud {
     position: relative;

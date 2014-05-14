@@ -1,3 +1,5 @@
+$storyHeight: 1000px;
+
 #story {
 
   .story-container {
@@ -27,18 +29,22 @@
     box-pack: start;
   }
 
+  section {
+    height: $storyHeight;
+  }
+
   #story-one {
     background-color: black;
     color: white;
-    height: 200px;
+    height: $storyHeight;
+    overflow: hidden;
     img {
-      max-height: 200px;
+      max-height: $storyHeight;
     }
   }
 
   #story-two {
     background-color: #CFCFCF;
-    height: 200px;
     justify-content: flex-start;
     .fa-clock-o {
       position: relative;
@@ -57,7 +63,6 @@
   }
 
   #story-three {
-    height: 240px;
 
     .powells {
       position: relative;
@@ -68,7 +73,6 @@
   }
 
   #story-four {
-    height: 200px;
     background-color: #CFCFCF;
 
     .fa-cloud {

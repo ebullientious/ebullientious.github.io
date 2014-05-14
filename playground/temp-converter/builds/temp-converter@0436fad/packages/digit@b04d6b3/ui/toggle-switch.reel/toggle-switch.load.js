@@ -1,0 +1,1 @@
+montageDefine("b04d6b3","ui/toggle-switch.reel/toggle-switch",{dependencies:["montage/core/core","montage/ui/base/abstract-toggle-switch"],factory:function(t,e){var i=(t("montage/core/core").Montage,t("montage/ui/base/abstract-toggle-switch").AbstractToggleSwitch);e.ToggleSwitch=i.specialize({})}});

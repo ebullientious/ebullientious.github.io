@@ -1,0 +1,38 @@
+@import '_landing';
+@import '_rsvp';
+@import '_story';
+@import '_tags';
+@import '_weddingParty';
+
+@font-face {
+  font-family: "Espacio";
+  src: url("../assets/fonts/Espacio.ttf") format("truetype");
+}
+
+body {
+  margin: 0px auto;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+nav {
+  margin-bottom: 0px !important;
+}
+
+.content {
+  padding: 40px;
+  margin: 0px auto;
+  width: 1200px;
+}
+
+#main {
+  margin: 0px auto;
+}
+
+.vertical-center {
+  display: box;
+  box-pack: center;
+  box-orient: vertical;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+}

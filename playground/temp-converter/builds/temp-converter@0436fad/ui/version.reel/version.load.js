@@ -1,0 +1,1 @@
+montageDefine("0436fad","ui/version.reel/version",{dependencies:["montage/ui/component"],factory:function(e,n){var t=e("montage/ui/component").Component;n.Version=t.specialize({constructor:{value:function(){this.super()}},montageDescription:{get:function(){return montageRequire.packageDescription}}})}});

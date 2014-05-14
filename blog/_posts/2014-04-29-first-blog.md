@@ -23,7 +23,7 @@ despite her 5'4" frame, she looks like she can tear me apart.
 Sometimes you have to go backwards to continue forwards
 =======================================================
 
-![Mount Everest Camps]({{ site.url }}/assets/images/everest-expedition-map.jpg)
+![Mount Everest Camps]({{ site.baseurl }}/assets/images/everest-expedition-map.jpg)
 
 Unlike what anybody would imagine, hikers who dare climb Mount Everest do not 
 just climb straight up. After spending a few days at the base camp to get their bodies acclimated to the altitude, they hike
