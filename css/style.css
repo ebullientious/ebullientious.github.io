@@ -1,0 +1,69 @@
+/* Colors taken from http://design-seeds.com/index.php/home/entry/summer-hues4 */
+@font-face {
+  font-family: Banda;
+  src: url("../assets/fonts/Banda-regular.otf"); }
+
+@font-face {
+  font-family: Aaargh;
+  src: url("../assets/fonts/Aaargh.ttf"); }
+
+body {
+  /* Internet Explorer 10 */
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  /* Firefox */
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -moz-box-orient: vertical;
+  /* Safari, Chrome, and Opera */
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+  /* W3C */
+  display: box;
+  box-pack: center;
+  box-align: center;
+  box-orient: vertical;
+  background-color: #dbd4ce;
+  text-align: center;
+  padding: 0px;
+  margin: 0px auto;
+  color: #97c1c7;
+  font-family: Aaargh; }
+
+::selection {
+  background: #d1d415;
+  /* Safari */ }
+
+::-moz-selection {
+  background: #d1d415;
+  /* Firefox */ }
+
+#headshotContainer {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 140px;
+  background-color: #97c1c7; }
+
+#headshot {
+  width: 200px;
+  border: 2px solid #97c1c7;
+  border-radius: 50%; }
+
+h1 {
+  font-family: Banda;
+  color: #332e2d; }
+
+nav a {
+  padding: 0px 20px;
+  font-size: 20px; }
+
+a:link, a:visited {
+  color: #332e2d;
+  text-decoration: none; }
+
+a:hover {
+  color: #ffa575; }
