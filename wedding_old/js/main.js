@@ -1,7 +1,4 @@
-
-
-
-var weddingApp = angular.module('weddingApp', ['ngRoute', 'd3', 'firebase']);
+var weddingApp = angular.module('weddingApp', ['ngRoute', 'd3']);
 
 weddingApp.config(function($routeProvider, $locationProvider) {
   $routeProvider

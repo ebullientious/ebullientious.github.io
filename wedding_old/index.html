@@ -1,7 +1,7 @@
 <!-- index.html -->
   <!DOCTYPE html>
   <!-- define angular app -->
-  <html>
+  <html ng-app="weddingApp">
   <head>
     <title>Selina and Tu</title>
     <link rel="icon" type="image/ico" href="favicon.ico"/>
@@ -16,9 +16,10 @@
     <!-- load jquery, bootstrap, and angular via CDN -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="js/can/can.jquery.min.js"></script>
-    <script src="js/can/can.control.plugin.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular-resource.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular-route.min.js"></script>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script> -->
     <script src="dist/ebullientious.github.io.js"></script>
@@ -34,13 +35,15 @@
     </script>
     <!-- <base href="/"> -->
   </head>
-  <body>
+  <body ng-controller="mainController">
 
     <!-- HEADER AND NAVBAR -->
     <header>
       <nav class="navbar navbar-default">
       <div class="container container-fluid">
         <ul id="navigation" class="nav navbar-nav">
+<!--      
+          Save this icon for mobile version     
           <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
           <li><a href="#rsvp"><i class="fa fa-pencil"></i> RSVP</a></li>
           <li><a href="#map"><i class="fa fa-globe"></i> Map of Guests</a></li>
@@ -48,7 +51,16 @@
           <li><a href="#weddingParty"><i class="fa fa-group"></i> Wedding Party</a></li>
           <li><a href="#registry"><i class="fa fa-gift"></i> Registry</a></li>
           <li><a href="#tags"><i class="fa fa-tags"></i> Tags</a></li>
-          <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+          <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li> -->
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#map">Map of Guests</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#weddingParty">Wedding Party</a></li>
+          <li><a href="#registry">Registry</a></li>
+          <li><a href="#tags">Tags</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       </nav>

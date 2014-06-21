@@ -8,8 +8,8 @@ module.exports = function (grunt) {
       },
       dist: {
         // the files to concatenate
-        // src: ['js/main.js', 'js/*.js','js/**/*.js', '!js/web-server.js'],
-        src: ['js/nav.js', 'js/weddingParty.js'],
+        src: ['js/main.js', 'js/*.js','js/services/*.js', '!scripts/web-server.js'],
+        // src: ['js/weddingParty.js'],
         // the location of the resulting JS file
         dest: 'dist/<%= pkg.name %>.js'
       }
@@ -27,8 +27,8 @@ module.exports = function (grunt) {
     },
     jshint: {
       // define the files to lint
-      // files: ['gruntfile.js', 'js/*.js', 'js/**/*.js'],
-      files: ['gruntfile.js', 'js/nav.js', 'js/weddingParty.js'],
+      files: ['gruntfile.js', 'js/*.js', 'js/services/*.js'],
+      // files: ['gruntfile.js', 'js/weddingParty.js'],
       // configure JSHint (documented at http://www.jshint.com/docs/)
       options: {
           // more options here if you want to override JSHint defaults
