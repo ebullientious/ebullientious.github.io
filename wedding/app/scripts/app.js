@@ -16,7 +16,7 @@ var weddingApp = angular.module('weddingApp', [
  *
  * Main module of the application.
  */
-weddingApp.config(function ($routeProvider) {
+weddingApp.config(function ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/contact', {
       templateUrl : 'views/contact.html',
@@ -61,4 +61,5 @@ weddingApp.config(function ($routeProvider) {
   // .otherwise({
   //   redirectTo : '/'
   // });
+    $locationProvider.html5Mode(true);
   });

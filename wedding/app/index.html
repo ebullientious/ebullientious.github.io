@@ -5,6 +5,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <base href="/">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -21,23 +22,21 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
+    <div class="header container-fluid">
+      <h3 class="text-muted">Selina &amp; Tu's Wedding</h3>
+      <ul id="navigation" class="nav navbar-nav">   
+        <li class="active"><a ng-href="#">Home</a></li>
+        <li><a ng-href="#rsvp">RSVP</a></li>
+        <li><a ng-href="#venue">Venue</a></li>
+        <li><a ng-href="#story">Our Story</a></li>
+        <li><a ng-href="#weddingParty">Wedding Party</a></li>
+        <li><a ng-href="#registry">Registry</a></li>
+        <li><a ng-href="#tags">Tags</a></li>
+        <li><a ng-href="#contact">Contact</a></li>
+      </ul>
+    </div>
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#rsvp">RSVP</a></li>
-          <li><a ng-href="#venue">Venue</a></li>
-          <li><a ng-href="#story">Our Story</a></li>
-          <li><a ng-href="#weddingParty">Wedding Party</a></li>
-          <li><a ng-href="#registry">Registry</a></li>
-          <li><a ng-href="#tags">Tags</a></li>
-          <li><a ng-href="#contact">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Selina &amp; Tu's Wedding</h3>
-      </div>
-
+    <div class="container" id="mainContent">
       <div ng-view=""></div>
 
       <div class="footer">
@@ -84,6 +83,7 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-local-storage/angular-local-storage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
