@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name weddingApp.controller:MainCtrl
+ * @name weddingApp.controller:mainController
  * @description
- * # MainCtrl
+ * # mainController
  * Controller of the weddingApp
  */
 angular.module('weddingApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('mainController', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
