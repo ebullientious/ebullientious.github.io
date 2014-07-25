@@ -43,10 +43,6 @@ weddingApp.config(function ($routeProvider) {
       templateUrl : 'views/venue.html',
       controller : 'venueController'
     })
-    // .when('/map', {
-    //   templateUrl : 'views/map.html',
-    //   controller : 'mapController'
-    // })
     .when('/tags', {
       templateUrl : 'views/tags.html',
       controller : 'tagsController'
