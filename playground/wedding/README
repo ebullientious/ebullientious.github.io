@@ -1,3 +1,7 @@
-Place to put wedding site
+- run "grunt serve" to create a local, Node-based http server on localhost:9000
 
-run "grunt serve:dist" to build the project into the 'ebullientious.github.io/wedding' directory"
+Each save will automatically force a browser refresh so you don’t have to do this yourself. This is called live reloading and it’s a nice way of getting a real-time view of your application state.
+
+- run "grunt serve:dist" to build the project into the 'ebullientious.github.io/wedding' directory"
+
+- Edit html/css in the ebullientious.github.io/playgroud/wedding/app folder.

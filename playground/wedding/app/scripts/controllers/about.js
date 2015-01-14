@@ -8,10 +8,6 @@
  * Controller of the weddingApp
  */
 angular.module('weddingApp')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('aboutController', function () {
+
   });

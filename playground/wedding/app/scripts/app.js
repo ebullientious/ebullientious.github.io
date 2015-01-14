@@ -19,6 +19,10 @@ var weddingApp = angular.module('weddingApp', [
  */
 weddingApp.config(function ($routeProvider) {
   $routeProvider
+    .when('/about', {
+      templateUrl : 'views/about.html',
+      controller : 'contactController'
+    })
     .when('/contact', {
       templateUrl : 'views/contact.html',
       controller : 'contactController'
