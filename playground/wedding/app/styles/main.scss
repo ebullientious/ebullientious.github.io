@@ -1,5 +1,5 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-$hintOfMint: gold;
+$hintOfMint: #f0fff0;
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
@@ -31,7 +31,7 @@ header {
   display: flex;
   position: fixed;
   width: 100%;
-  background-color: $hintOfMint;
+  background-color: gold;
   z-index: 100;
   top: 0px;
 
@@ -46,6 +46,15 @@ header {
   }
 }
 
+nav {
+  margin-top: 10px;
+  a {
+    color: darkcyan;
+  }
+  .active, li a:hover {
+    background-color: $hintOfMint;
+  }
+}
 /* Custom page footer */
 footer {
   position: fixed;

@@ -14,4 +14,5 @@ angular.module('weddingApp')
       'AngularJS',
       'Karma'
     ];
+
   });

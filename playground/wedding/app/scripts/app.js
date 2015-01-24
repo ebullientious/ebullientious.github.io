@@ -43,6 +43,10 @@ weddingApp.config(function ($routeProvider) {
       templateUrl : 'views/rsvp.html',
       controller : 'rsvpController'
     })
+    .when('/registry', {
+      templateUrl : 'views/registry.html',
+      controller : 'registryController'
+    })
     .when('/venue', {
       templateUrl : 'views/venue.html',
       controller : 'venueController'
