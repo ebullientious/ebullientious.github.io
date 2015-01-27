@@ -22,14 +22,17 @@
 
     <!-- Add your site or application content here -->
     <header>
-      <h3 class="text-muted">Selina &amp; Tu</h3>
+      <div class="pomar-bg"></div>
+      <div class="text-content">
+      <h3 class="text-muted" ng-cloak>Selina &amp; Tu</h3>
       <nav ng-controller="navController">
         <ul class="nav nav-pills pull-right">
-          <li ng-repeat="item in navList">
+          <li ng-repeat="item in navList" ng-cloak>
             <a ng-class="{active:item.active}" href="#{{item.url}}">{{item.title}}</a>
           </li>
         </ul>
       </nav>
+  </div>
     </header>
 
     <div id="mainContent" class="container">
@@ -86,7 +89,7 @@
     <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <script src="bower_components/ScrollMagic/js/jquery.scrollmagic.js"></script>
-    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
     <script src="bower_components/ng-parallax/angular-parallax.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -99,6 +102,8 @@
         <script src="scripts/controllers/venue.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/controllers/registry.js"></script>
+        <script src="scripts/controllers/story.js"></script>
+        <script src="scripts/controllers/party.js"></script>
 
         <!-- endbuild -->
 </body>

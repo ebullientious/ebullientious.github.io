@@ -1,13 +1,66 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 $hintOfMint: #f0fff0;
 
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url(../fonts/Quicksand-Bold.otf);
+}
+
+@font-face {
+  font-family: Quicksand-Dash;
+  src: url(../fonts/Quicksand-Dash.otf);
+}
+
+@font-face {
+  font-family: Quicksand-Book;
+  src: url(../fonts/Quicksand-Book.otf);
+}
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
 // endbower
 
+// Prevent angular template from being briefly displayed upon loading 
+// https://docs.angularjs.org/api/ng/directive/ngCloak
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 body {
   margin: auto 0px;
   padding: 0px;
+  background-image: url(../images/pomarJunction.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.pomar-bg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+  background-image: url(../images/pomarJunction.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  opacity: 80%;
+}
+
+div.text-content {
+  position: relative;
+  z-index: 100;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .browsehappy {
@@ -27,11 +80,9 @@ footer {
 
 /* Custom page header */
 header {
-  border-bottom: 1px solid #e5e5e5;
-  display: flex;
+  // border-bottom: 1px solid #e5e5e5;
   position: fixed;
   width: 100%;
-  background-color: gold;
   z-index: 100;
   top: 0px;
 
@@ -41,26 +92,44 @@ header {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
-    width: 30%;
+    width: 20%;
     padding: 10px;
   }
 }
 
 nav {
+  font-family: Quicksand-Bold;
   margin-top: 10px;
-  a {
-    color: darkcyan;
-  }
-  .active, li a:hover {
-    background-color: $hintOfMint;
+  li {
+    a {
+      font-size: 30px;
+      color: white;
+    }
+    a.active, a:hover {
+      background: none;
+      color: pink;
+    }
   }
 }
+
+nav .nav-pills > li > a:hover {
+  background: none;
+}
+
+.content {
+  background-color: rgba(255,255,255,0.85);
+  padding: 40px;
+  font-family: Quicksand-Book;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
 /* Custom page footer */
 footer {
   position: fixed;
   bottom: 19px;
   padding-top: 19px;
-  color: #777;
+  color: pink;
 }
 
 .container-narrow > hr {
