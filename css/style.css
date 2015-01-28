@@ -12,11 +12,6 @@ body {
   display: -ms-flexbox;
   -ms-flex-pack: center;
   -ms-flex-align: center;
-  /* Firefox */
-  display: -moz-box;
-  -moz-box-pack: center;
-  -moz-box-align: center;
-  -moz-box-orient: vertical;
   /* Safari, Chrome, and Opera */
   display: -webkit-box;
   -webkit-box-pack: center;
@@ -32,7 +27,8 @@ body {
   padding: 0px;
   margin: 0px auto;
   color: #97c1c7;
-  font-family: Aaargh; }
+  font-family: Aaargh;
+  width: 100%; }
 
 ::selection {
   background: #d1d415;
@@ -55,7 +51,8 @@ body {
 
 h1 {
   font-family: Banda;
-  color: #332e2d; }
+  color: #332e2d;
+  padding-top: 20px; }
 
 nav a {
   padding: 0px 20px;

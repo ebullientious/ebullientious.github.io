@@ -22,12 +22,6 @@ body {
   -ms-flex-pack:center;
   -ms-flex-align:center;
 
-  /* Firefox */
-  display:-moz-box;
-  -moz-box-pack:center;
-  -moz-box-align:center;
-  -moz-box-orient: vertical;
-
   /* Safari, Chrome, and Opera */
   display:-webkit-box;
   -webkit-box-pack:center;
@@ -46,6 +40,7 @@ body {
   margin: 0px auto;
   color: $pistachio;
   font-family: Aaargh;
+  width: 100%;
 }
 
 ::selection {
