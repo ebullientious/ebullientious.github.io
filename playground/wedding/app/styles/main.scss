@@ -21,7 +21,7 @@ $mint: rgba(168,224,209,0.8);
   font-family: Quicksand-BoldItalic;
   src: url(../fonts/Quicksand-BoldItalic.otf);
 }
-@import "_party.css";
+@import "_party.scss";
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
