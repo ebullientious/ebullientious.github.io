@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name weddingApp.controller:registryController
+ * @name weddingApp.controller:extrasController
  * @description
- * # registryController
+ * # extrasController
  * Controller of the weddingApp
  */
 angular.module('weddingApp')
-  .controller('registryController', function () {
+  .controller('extrasController', function () {
 
   });

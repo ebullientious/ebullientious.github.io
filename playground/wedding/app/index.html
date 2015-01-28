@@ -22,16 +22,17 @@
 
     <!-- Add your site or application content here -->
     <header>
-      <div class="pomar-bg"></div>
-      <div class="text-content">
-      <h3 class="text-muted" ng-cloak>Selina &amp; Tu</h3>
-      <nav ng-controller="navController">
-        <ul class="nav nav-pills pull-right">
-          <li ng-repeat="item in navList" ng-cloak>
-            <a ng-class="{active:item.active}" href="#{{item.url}}">{{item.title}}</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="pomar-bg">
+        <div class="text-content">
+        <!-- <h3 class="text-muted" ng-cloak>Selina &amp; Tu</h3> -->
+        <nav ng-controller="navController">
+          <ul class="nav nav-pills pull-right">
+            <li ng-repeat="item in navList" ng-cloak>
+              <a ng-class="{active:item.active}" href="#{{item.url}}">{{item.title}}</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
   </div>
     </header>
 
@@ -100,8 +101,7 @@
         <script src="scripts/controllers/nav.js"></script>
         <script src="scripts/controllers/rsvp.js"></script>
         <script src="scripts/controllers/venue.js"></script>
-        <script src="scripts/controllers/contact.js"></script>
-        <script src="scripts/controllers/registry.js"></script>
+        <script src="scripts/controllers/extras.js"></script>
         <script src="scripts/controllers/story.js"></script>
         <script src="scripts/controllers/party.js"></script>
 

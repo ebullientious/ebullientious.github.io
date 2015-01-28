@@ -1,0 +1,71 @@
+$partyHeight: 300px;
+$partyWidth: 500px;
+
+#party {
+  .view {
+    width: $partyWidth;
+    height: $partyHeight;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center;
+  }
+  .view .mask, .view .content {
+    width: $partyWidth;
+    height: $partyHeight;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  .view .mask { 
+    background-color: rgba(146,96,91,0.3);
+    transform: translateX(-$partyWidth);
+    -webkit-transform: translateX(-$partyWidth);
+    opacity: 1;
+    transition: all 0.4s ease-in-out; 
+}
+  .view img {
+    display: block;
+    position: relative;
+    width: $partyWidth;
+    z-index: 2;
+    transition: all 0.3s ease-in-out; 
+  }
+  .view h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+  }
+  .view p {
+    margin: 12px 30px 0px 10px;
+    opacity: 0;
+    color: #333;
+    transition: all 0.2s linear;
+  }
+
+  .view:hover .mask { 
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+  }                       
+  .view:hover img { 
+    -webkit-transform: translateX($partyWidth);
+    transform: translateX($partyWidth);
+    transition-delay: 0.1s;
+  }
+  .view:hover p {
+    opacity: 1;
+    transition-delay: 0.4s;
+  }
+}
