@@ -5,3 +5,6 @@
 #rsvp input[type=email],
 #rsvp textarea {
   width: 300px; }
+#rsvp label.required:after {
+  content: "*";
+  padding-left: 1%; }

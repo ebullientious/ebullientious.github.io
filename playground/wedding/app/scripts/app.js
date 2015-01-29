@@ -47,13 +47,15 @@ weddingApp.config(function ($routeProvider) {
       templateUrl : 'views/tags.html',
       controller : 'tagsController'
     })
-    .when('/', {
+    .when('/main', {
       templateUrl : 'views/main.html',
       controller : 'mainController'    
+    })
+    .when('/thanks', {
+      templateUrl : 'views/thanks.html'
     })
     .otherwise({
       templateUrl : 'views/main.html',
       controller : 'mainController'
     });
-
   });

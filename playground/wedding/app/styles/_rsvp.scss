@@ -11,4 +11,11 @@
     // margin: 10px 0px;
     width: 300px;
   }
+
+  label.required:after {
+    content: "*";
+    padding-left:1%;
+  }
+
 }
+
