@@ -3,7 +3,7 @@
 /**
  * @ngdoc function
  * @name weddingApp.controller:tagsController
- * @description
+ * @description Loads all the tags from different feeds 
  * # tagsController
  * Controller of the weddingApp
  */

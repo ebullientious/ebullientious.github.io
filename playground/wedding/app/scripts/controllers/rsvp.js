@@ -22,7 +22,7 @@ angular.module('weddingApp')
     $scope.submit = function() {
       formService.postMessage(
         $scope.formData
-      )
+      );
       // .success(function() {
       //     console.log('Success!');
       //   }
