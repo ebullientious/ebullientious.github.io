@@ -25,7 +25,7 @@
   text-align: center;
   box-shadow: 1px 1px 2px #e6e6e6;
   cursor: default;
-  background: white url(../images/bgimg.jpg) no-repeat center center; }
+  background: #fff no-repeat center center; }
 #party .view .mask, #party .view .content {
   width: 500px;
   height: 300px;
@@ -70,6 +70,22 @@
 #party .view:hover p {
   opacity: 1;
   transition-delay: 0.4s; }
+
+#thanks {
+  text-align: center; }
+  #thanks img {
+    width: 1000px; }
+
+#tags #instagram-results {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: center; }
+#tags .instagram-result {
+  padding: 12px;
+  -webkit-animation: fadeIn 1s; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -5387,7 +5403,7 @@ h2 {
   border-bottom-color: rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  height: 80px; }
+  min-height: 80px; }
 
 .pomar-bg::before {
   position: absolute;
@@ -5447,7 +5463,7 @@ nav {
   margin-top: 10px; }
   nav li a {
     font-size: 30px;
-    color: rgba(255, 255, 255, 0.75); }
+    color: black; }
   nav li a.active, nav li a:hover {
     background: none;
     text-shadow: green; }
@@ -5488,5 +5504,12 @@ footer {
 
 #mainContent {
   margin-top: 80px; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
 
 /* Responsive: Portrait tablets and up */

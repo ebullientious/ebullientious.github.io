@@ -10,9 +10,11 @@
 angular.module('weddingApp')
   .controller('tagsController', ['$scope', 'instagram', function($scope, instagram) {
   $scope.tagItems = [];
+  $scope.searchValue = 'selinaTu';
   $scope.$watch('searchValue', function () {
     instagram.fetchRecentTag($scope.searchValue, function (data) {
       $scope.tagItems = data;
+      console.log(data);
     });
   });
 }]);

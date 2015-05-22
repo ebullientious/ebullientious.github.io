@@ -6,4 +6,5 @@
   -webkit-flex-flow: row wrap;
   -webkit-justify-content: center; }
 #tags .instagram-result {
-  padding: 12px; }
+  padding: 12px;
+  -webkit-animation: fadeIn 1s; }
