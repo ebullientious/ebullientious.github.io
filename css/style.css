@@ -65,3 +65,10 @@ a:link, a:visited {
 
 a:hover {
   color: #ffa575; }
+
+#recipe {
+  color: black; }
+
+ol {
+  text-align: left;
+  color: black; }
