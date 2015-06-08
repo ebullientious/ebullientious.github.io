@@ -7,7 +7,7 @@ angular.module('weddingApp')
       { url: '/main', title: 'Home'},
       { url: '/venue', title: 'Venue'},
       { url: '/story', title: 'Story'},
-      { url: '/rsvp', title: 'RSVP'},
+      // { url: '/rsvp', title: 'RSVP'},
       { url: '/party', title: 'Party'},
       { url: '/tags', title: 'Tags'},
       { url: '/extras', title: 'Extras'},
